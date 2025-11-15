@@ -80,42 +80,6 @@ src
 
 
 
-⚙️ CI/CD Pipeline (GitHub Actions)
-name: API Test Automation CI
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: "17"
-        distribution: "temurin"
-
-    - name: Install Maven dependencies
-      run: mvn clean install -DskipTests
-
-    - name: Run Tests
-      run: mvn test
-
-    - name: Upload Test Reports
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-reports
-        path: target/surefire-reports
-
-
 ▶️ Run Tests Locally
 TestNG
 mvn clean test
