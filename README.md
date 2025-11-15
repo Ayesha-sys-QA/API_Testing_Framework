@@ -1,4 +1,5 @@
-API Testing Framework
+# 🧪 API Testing Framework  
+### Java | RestAssured | TestNG | Cucumber | JDBC | Maven
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![TestNG](https://img.shields.io/badge/TestNG-Framework-blue)
@@ -7,82 +8,72 @@ API Testing Framework
 ![Maven](https://img.shields.io/badge/Maven-Build-lightgrey)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-Overview
+---
 
-This repository contains a complete API Automation Framework with the following capabilities:
+## 🌐 Overview
 
-✔️ Automated API test scripts (GET, POST, PUT, DELETE)
-✔️ BDD testing with Cucumber
-✔️ Test execution & grouping with TestNG
-✔️ SQL database validation (JDBC + MySQL)
-✔️ Reusable utilities & configuration management
-✔️ Easily extendable for microservices or enterprise platforms
+This repository contains a **complete API Automation Framework** implemented using:
 
-Designed to reflect real-world QA Automation engineer responsibilities seen in banking, healthcare, SaaS, and e-government systems.
+- **RestAssured** for REST API testing  
+- **TestNG** for execution, grouping, assertions  
+- **Cucumber (BDD)** for business-readable testing  
+- **JDBC + MySQL** for backend validation  
+- **Maven** for dependency and build management  
 
-🔥 Features
-🔹 API Testing (RestAssured)
+This framework demonstrates **real-world enterprise-level API & Database automation**, suitable for banking, healthtech, edtech, and large-scale microservices.
 
-RESTful API test coverage
+---
 
-Response/Schema validation
+## 🚀 Key Features
 
-Token-based authentication
+### 🔹 API Testing (RestAssured)
+- GET / POST / PUT / DELETE coverage  
+- JSON response validation  
+- Parameterized testing  
+- Dynamic payloads  
+- Configurable environments (`configs.properties`)
 
-Environment variables from configs.properties
+### 🔹 Database Validation (JDBC)
+- Execute SQL queries  
+- Validate stored data  
+- DBUtils reusable methods  
+- Metadata validation
 
-🔹 Cucumber BDD Layer
+### 🔹 Cucumber BDD
+- Feature files  
+- Step definitions  
+- Hooks (before/after)  
+- High-level scenarios for readability  
 
-Feature files for high-level scenarios
+### 🔹 TestNG Execution
+- testng.xml suites  
+- Parallel execution support  
+- Clear reporting  
 
-Reusable steps
+### 🔹 Utilities
+- Global variables  
+- Endpoints/constants  
+- Reusable methods  
+- JSON helpers  
+- Config manager  
 
-Hooks for setup/teardown
-
-Human-readable documentation for business teams
-
-🔹 TestNG Execution
-
-Parallel testing
-
-XML suite support
-
-Logging + rich HTML results
-
-🔹 Database Testing (JDBC)
-
-Execute SQL queries
-
-Data consistency validation
-
-DBUtils helper for reusability
-
-🔹 Utility Layer
-
-Payload builders
-
-Endpoints/constants
-
-Global variables
-
-Config reader
-
-Token generator
+---
 
 ## 📁 Project Structure
 
 src
 └── test
-    ├── java
-    │ ├── com.ayesha.api5 # API Tests
-    │ ├── com.ayesha.db # SQL/JDBC Tests
-    │ ├── com.test.runners # Runners
-    │ ├── com.test.steps # BDD Steps
-    │ └── com.test.utils # Utilities
-    └── resources
-├── configs
-├── featurefiles
-└── test-data
+├── java
+│ ├── com.ayesha.api5 # API test scripts (CRUD)
+│ ├── com.ayesha.db # Database/JDBC tests
+│ ├── com.demo.api5 # Demo sample APIs
+│ ├── com.test.runners # TestNG & Cucumber Runners
+│ ├── com.test.steps # Step Definitions (BDD)
+│ └── com.test.utils # Utilities & helpers
+└── resources
+├── configs # Configuration files
+├── featurefiles # Cucumber Features
+└── test-data # Payloads & JSON files
 
 ---
 
