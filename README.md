@@ -1,6 +1,12 @@
 API Testing Framework
 
-Java | RestAssured | TestNG | Cucumber | JDBC | Maven
+![Java](https://img.shields.io/badge/Java-17-orange)
+![TestNG](https://img.shields.io/badge/TestNG-Framework-blue)
+![RestAssured](https://img.shields.io/badge/RestAssured-API--Testing-green)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-Build-lightgrey)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
 Overview
 
 This repository contains a complete API Automation Framework with the following capabilities:
