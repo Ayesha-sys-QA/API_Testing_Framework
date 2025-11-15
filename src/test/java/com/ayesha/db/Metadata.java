@@ -1,0 +1,63 @@
+package com.ayesha.db;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.junit.Test;
+
+import com.mysql.cj.jdbc.DatabaseMetaData;
+
+public class Metadata {
+
+	public static String dbUsername = "user1";
+	public static String dbPassword = "Neotech@123";
+	public static String dbUrl = "jdbc:mysql://hrm.neotechacademy.com:3306/classicmodels";
+
+	
+
+	@Test
+	public void rsMetaData() throws SQLException {
+		Connection conn = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+
+		// create a statement object
+		Statement st = conn.createStatement();
+
+		// execute a query
+		ResultSet rs = st.executeQuery("SELECT * FROM employees WHERE employeeNumber > 1111;");
+
+		// we have the result set, lets get the metadata
+		ResultSetMetaData rsMetaData = rs.getMetaData();
+
+		// what can i get from the ResultSetMetaData?
+
+		// i can get the number of columns
+		int columnCount = rsMetaData.getColumnCount();
+		System.out.println("Number of columns: " + columnCount);
+
+		// i can get the name of first column
+		String firstColumnName = rsMetaData.getColumnName(1);
+		System.out.println("First column name: " + firstColumnName);
+
+		// i can get the name of the third column
+		String thirdColumnName = rsMetaData.getColumnName(3);
+		System.out.println("Third column name: " + thirdColumnName);
+
+		// i can get the types of the columns
+		for (int i = 1; i <= columnCount; i++) {
+			String columnName = rsMetaData.getColumnName(i);
+			String columnType = rsMetaData.getColumnTypeName(i);
+			System.out.println("Column " + i + ": " + columnName + " - Type: " + columnType);
+		}
+
+		// close the resources
+		rs.close();
+		st.close();
+		conn.close();
+
+	}
+}

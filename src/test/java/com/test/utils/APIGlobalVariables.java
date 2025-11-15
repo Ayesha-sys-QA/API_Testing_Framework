@@ -1,0 +1,16 @@
+package com.test.utils;
+
+public class APIGlobalVariables {
+	public static String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjQiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGVzdGVyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoidGVzdGVyQG5lby5hY2FkZW15IiwiQXNwTmV0LklkZW50aXR5LlNlY3VyaXR5U3RhbXAiOiJMRlNMQktVTUhPVVRPQkhBTVNXN0NVUVNRNVFRSjZaNiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRlc3RlciIsImh0dHA6Ly93d3cuYXNwbmV0Ym9pbGVycGxhdGUuY29tL2lkZW50aXR5L2NsYWltcy90ZW5hbnRJZCI6IjEiLCJzdWIiOiI0IiwianRpIjoiNGZhZTFmOTEtMzhmNy00Y2FjLWE0NDctOWQ5NjE4MTVjNDA2IiwiaWF0IjoxNzU3MDk1MDIyLCJuYmYiOjE3NTcwOTUwMjIsImV4cCI6MTc1NzE4MTQyMiwiaXNzIjoiZGVtbyIsImF1ZCI6ImRlbW8ifQ.fwu8zYq8Y6-umIAhu4n1qTCsh3eGJTPBY2EBVzDpV_0";
+	
+	public static int classId = 1041;
+	public static int studentId = 1290;
+	
+	public static String firstname = "Aicha";
+	public static String lastname = "Moustatia";
+	public static String email = "Amoustatia@neo.com";
+	public static String city = "Rabat";
+	public static String state = "MA";
+	public static String studentNumber = "NEO369";
+	
+}
